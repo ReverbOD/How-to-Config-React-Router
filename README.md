@@ -1,14 +1,16 @@
 #Router Configuration for React.JS
 
 ## I've used
- you need to install react-router-dom for web application to make router working fine. Install react router using the command:
+First of all, you need to create a react app, to make this launch `npx create-react-app nameofyourapp`.
+
+Then you need to install react-router-dom for web application to make router working fine. Install react router using the command:
 
 ### `npm install react-router-dom`
 
 ## Steps
-* Create `Routes.js` file to link all the page you need for your app (see repo)
+* Create `Routes.js` file to link all the page you need for your app [(see repo)](https://github.com/ReverbOD/router-config/blob/master/src/Routes.js)
 * Then you can create the page you needed for the `Routes.js`
-* Modify the `index.js` file, to properly configure the BrowserRoutes (see repo)
+* Modify the `index.js` file, to properly configure the BrowserRoutes [(see repo)](https://github.com/ReverbOD/router-config/blob/master/src/index.js)
 * Modify `App.js` for rendering all the page
 * Modify `package.json` to include homepage property as below: `"homepage":"http://localhost:3000/routes-config"` (use the same name you used in `index.js` file on `basename={""}` of BrowserRouter configuration
 
