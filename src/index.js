@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// Here i've have modified the index.js to properly configure the BrowserRouter 
+// Here i've modified the index.js to properly configure the BrowserRouter 
 
 ReactDOM.render(
   <React.StrictMode>
