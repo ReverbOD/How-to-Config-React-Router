@@ -14,4 +14,4 @@ Then you need to install react-router-dom for web application to make router wor
 * Modify `App.js` for rendering all the page [(see repo)](https://github.com/ReverbOD/router-config/blob/master/src/App.js)
 * Modify `package.json` to include homepage property as below: `"homepage":"http://localhost:3000/routes-config"` (use the same name you used in `index.js` file on `basename={""}` of BrowserRouter configuration
 
-## Now everything should work fine, to be sure run `npm start`
+ Now everything should work fine, to be sure run `npm start`
