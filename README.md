@@ -8,7 +8,7 @@ Then you need to install react-router-dom for web application to make router wor
 ### `npm install react-router-dom`
 
 ## Steps
-* Create `Routes.js` file to link all the page you need for your app [(see repo)](https://github.com/ReverbOD/router-config/blob/master/src/Routes.js)
+* Create `Routes.js` file to links all the pages you need for your app [(see repo)](https://github.com/ReverbOD/router-config/blob/master/src/Routes.js)
 * Then you can create the page you needed for the `Routes.js`
 * Modify the `index.js` file, to properly configure the BrowserRoutes [(see repo)](https://github.com/ReverbOD/router-config/blob/master/src/index.js)
 * Modify `App.js` for rendering all the page [(see repo)](https://github.com/ReverbOD/router-config/blob/master/src/App.js)
