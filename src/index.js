@@ -1,12 +1,17 @@
 import React from 'react';
+import { withRouter, BrowserRouter, Route } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// Here i've have modified the index.js to properly configure the BrowserRouter 
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename={"/routes-config"}> {/* change basename={""} with your name app setted in package.json on "homepage" string*/}
+    	<Route path="/" component={withRouter(App)} />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
