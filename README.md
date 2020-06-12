@@ -1,4 +1,4 @@
-# Router Configuration for React.JS
+# How to configure Router for React.JS
 
 ## I've used
 First of all, you need to create a react app, to make this launch `npx create-react-app nameofyourapp`.
