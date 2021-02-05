@@ -1,31 +1,31 @@
 import React from 'react';
-import './App.css';
-import { Switch, Route } from "react-router-dom";
-import Routes from "./Routes.js";
+import reactDOM from 'react-dom';
+import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-//Modified App.js to render all routes
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
 
-const switchRoutes = (
-  <Switch>
-    {Routes.map((prop, key) => {
-      return (
-        <Route
-          exact
-          path={prop.path}
-          component={prop.component}
-          key={key}
-        />
-      );
-    })}
-  </Switch>
-);
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <div>{switchRoutes}</div>
-    </div>
-  );
+<Router>
+  <Navbar />
+  <Switch>
+    <Route exact path='/about'>
+      <About />
+    </Route>
+    <Route exact path='/contact'>
+      <Contact />
+    </Route>
+    <Route exact path='/'>
+      <Home />
+    </Route>
+  </Switch>
+</Router>
+  )
 }
 
-export default App;
+reactDOM.render(<App />, document.getElementById('root'))
